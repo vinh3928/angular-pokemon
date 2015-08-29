@@ -8,3 +8,12 @@ app.config(function($routeProvider) {
   });
 
 });
+
+app.directive("vnRandomPokemon", function () {
+  return {
+    templateUrl: "partials/random-pokemon.html",
+    scope: {
+      randomPokemon: "="
+    }
+  }
+});

@@ -1,0 +1,13 @@
+<div ng-repeat="pokemon in randomPokemon">
+<h2>{{pokemon.name}}</h2>
+<p>Types:</p>
+<p ng-repeat="types in pokemon.types">
+  {{types.name}}
+</p>
+<p>Moves:</p>
+<p ng-repeat="moves in pokemon.moves| limitTo: 6">
+  {{moves.name}}
+</p>
+
+<h4>{{pokemon.sprites}}</h4>
+</div>
